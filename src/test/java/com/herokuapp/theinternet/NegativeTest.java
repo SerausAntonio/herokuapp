@@ -27,7 +27,7 @@ public class NegativeTest {
         String actualMessage = driver.findElement(By.xpath("//div[@id='flash']")).getText();
         String expectedMessage = "Your username is invalid!";
 
-        // Assert.assertTrue(actualMessage.equals(expectedMessage));
+        Assert.assertFalse(actualMessage.equals(expectedMessage));
         driver.quit();
     }
 }
