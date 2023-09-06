@@ -3,6 +3,7 @@ package com.herokuapp.theinternet;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -10,7 +11,9 @@ import org.testng.annotations.Test;
 public class NegativeTest {
 
     public void loginTest() {
-        WebDriver driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        WebDriver driver = new ChromeDriver(options);
         driver.get("http://the-internet.herokuapp.com/login");
         driver.manage().window().maximize();
         driver.findElement(By.id("username")).sendKeys("tommith");
