@@ -26,7 +26,7 @@ public class PositiveTest {
         String actualMessage = driver.findElement(By.xpath("//div[@id='flash']")).getText();
         String expectedMessage = "You logged into a secure area!";
 
-       // Assert.assertTrue(actualMessage.equals(expectedMessage));
-      //  driver.quit();
+        Assert.assertFalse(actualMessage.equals(expectedMessage));
+        driver.quit();
     }
 }
