@@ -7,26 +7,24 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 @Test
-public class PositiveTest {
+public class NegativeTest {
 
-    public void loginTest(){
-
+    public void loginTest() {
         WebDriver driver = new ChromeDriver();
-
         driver.get("http://the-internet.herokuapp.com/login");
         driver.manage().window().maximize();
-        driver.findElement(By.id("username")).sendKeys("tomsmith");
+        driver.findElement(By.id("username")).sendKeys("tommith");
         driver.findElement(By.id("password")).sendKeys("SuperSecretPassword!");
 
         driver.findElement(By.xpath("//button[@type='submit']")).click();
-        String expectedURL = "http://the-internet.herokuapp.com/secure";
+        String expectedURL = "http://the-internet.herokuapp.com/login";
         System.out.println(driver.getCurrentUrl());
-        Assert.assertEquals(driver.getCurrentUrl(),expectedURL);
+        Assert.assertEquals(driver.getCurrentUrl(), expectedURL);
 
         String actualMessage = driver.findElement(By.xpath("//div[@id='flash']")).getText();
-        String expectedMessage = "You logged into a secure area!";
+        String expectedMessage = "Your username is invalid!";
 
-       // Assert.assertTrue(actualMessage.equals(expectedMessage));
-      //  driver.quit();
+        // Assert.assertTrue(actualMessage.equals(expectedMessage));
+        driver.quit();
     }
 }
