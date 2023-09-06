@@ -2,18 +2,18 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-07T00:28:57 CEST" name="Surefire suite" finished-at="2023-09-07T00:29:04 CEST" duration-ms="6801">
+  <suite started-at="2023-09-07T01:13:26 CEST" name="Surefire suite" finished-at="2023-09-07T01:13:33 CEST" duration-ms="6549">
     <groups>
     </groups>
-    <test started-at="2023-09-07T00:28:57 CEST" name="Surefire test" finished-at="2023-09-07T00:29:04 CEST" duration-ms="6801">
+    <test started-at="2023-09-07T01:13:26 CEST" name="Surefire test" finished-at="2023-09-07T01:13:33 CEST" duration-ms="6549">
       <class name="com.herokuapp.theinternet.NegativeTest">
-        <test-method signature="loginTest()[pri:0, instance:com.herokuapp.theinternet.NegativeTest@43ee72e6]" started-at="2023-09-07T00:28:57 CEST" name="loginTest" finished-at="2023-09-07T00:29:01 CEST" duration-ms="3958" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.herokuapp.theinternet.NegativeTest@1d082e88]" started-at="2023-09-07T01:13:26 CEST" name="loginTest" finished-at="2023-09-07T01:13:30 CEST" duration-ms="3837" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
       </class> <!-- com.herokuapp.theinternet.NegativeTest -->
       <class name="com.herokuapp.theinternet.PositiveTest">
-        <test-method signature="loginTest()[pri:0, instance:com.herokuapp.theinternet.PositiveTest@78e94dcf]" started-at="2023-09-07T00:29:01 CEST" name="loginTest" finished-at="2023-09-07T00:29:04 CEST" duration-ms="2812" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.herokuapp.theinternet.PositiveTest@184cf7cf]" started-at="2023-09-07T01:13:30 CEST" name="loginTest" finished-at="2023-09-07T01:13:33 CEST" duration-ms="2681" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
