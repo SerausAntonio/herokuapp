@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 public class PositiveTest {
 
     public void loginTest(){
+        //TOKEN ADDED
         WebDriver driver = new DriverFactory().initializeDriver();
         driver.get("http://the-internet.herokuapp.com/login");
         driver.manage().window().maximize();
