@@ -13,6 +13,7 @@ public class PositiveTest {
 
     public void loginTest(){
         //TOKEN ADDED
+        //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
         WebDriver driver = new DriverFactory().initializeDriver();
         driver.get("http://the-internet.herokuapp.com/login");
         driver.manage().window().maximize();
