@@ -10,7 +10,7 @@ public class DriverFactory {
 
     public WebDriver initializeDriver(){
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
+        options.addArguments("headed");
         WebDriver driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         return driver;
