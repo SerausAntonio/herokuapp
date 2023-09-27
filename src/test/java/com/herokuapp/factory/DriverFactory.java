@@ -8,7 +8,7 @@ import java.time.Duration;
 
 public class DriverFactory {
 
-    public WebDriver initializeDriver(){
+    public static WebDriver initializeDriver(){
         ChromeOptions options = new ChromeOptions();
         options.addArguments("headed");
         WebDriver driver = new ChromeDriver(options);
