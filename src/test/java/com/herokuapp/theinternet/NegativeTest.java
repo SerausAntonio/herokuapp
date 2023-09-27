@@ -15,7 +15,6 @@ public class NegativeTest extends Base {
     public void loginTest() {
 
         locateURL("http://the-internet.herokuapp.com/login");
-        driver.manage().window().maximize();
         sendKey(By.id("username"),"tommith");
         sendKey(By.id("password"),"SuperSecretPassword!");
          clickOnElement(By.xpath("//button[@type='submit']"));
